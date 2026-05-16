@@ -2,20 +2,14 @@
 
 A backend-only Blog Application built using Node.js, Express.js, and MongoDB.
 
-This project provides REST APIs for managing blogs, likes, unlikes, and comments. It was built for learning backend development concepts and practicing API architecture using Express and MongoDB.
+This project provides REST APIs for:
+- Creating blog posts
+- Liking posts
+- Unliking posts
+- Adding comments
+- Fetching all blog posts
 
----
-
-# Features
-
-- Create a blog
-- Fetch all blogs
-- Like a blog
-- Unlike a blog
-- Add comments to blogs
-- MongoDB database integration
-- REST API architecture
-- Structured backend folder organization
+The project was built to practice backend development concepts including REST APIs, MongoDB operations, controllers, models, routing, and project structuring.
 
 ---
 
@@ -28,7 +22,19 @@ This project provides REST APIs for managing blogs, likes, unlikes, and comments
 
 ---
 
-# Project Structure
+# Features
+
+- Create Blog Posts
+- Fetch All Blog Posts
+- Like a Blog
+- Unlike a Blog
+- Add Comments
+- MongoDB Integration
+- Structured Backend Architecture
+
+---
+
+# Folder Structure
 
 ```bash
 Blog-app-backend/
@@ -37,21 +43,20 @@ Blog-app-backend/
 │   └── database.js
 │
 ├── controllers/
-│   ├── createBlog.js
-│   ├── likeBlog.js
-│   ├── unlikeBlog.js
-│   ├── commentBlog.js
-│   └── getAllBlogs.js
+│   ├── commentController.js
+│   ├── likeController.js
+│   └── postController.js
 │
 ├── models/
-│   ├── Blog.js
-│   ├── Like.js
-│   └── Comment.js
+│   ├── commentModel.js
+│   ├── likeModel.js
+│   └── postModel.js
 │
 ├── routes/
-│   └── blogRoutes.js
+│   └── blog.js
 │
 ├── index.js
+├── .env
+├── .gitignore
 ├── package.json
-├── package-lock.json
-└── .gitignore
+└── package-lock.json
