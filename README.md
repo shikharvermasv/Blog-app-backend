@@ -60,3 +60,56 @@ Blog-app-backend/
 ├── .gitignore
 ├── package.json
 └── package-lock.json
+
+Installation & Setup
+1. Clone Repository
+git clone https://github.com/YOUR_USERNAME/Blog-app-backend.git
+2. Move Into Project Folder
+cd Blog-app-backend
+3. Install Dependencies
+npm install
+4. Create Environment Variables
+
+Create a .env file in the root directory.
+
+Add:
+
+PORT=3000
+DATABASE_URL=your_mongodb_connection_string
+5. Start Server
+npm start
+
+OR if using nodemon:
+
+npm run dev
+API Endpoints
+Create Blog Post
+POST /api/v1/createPost
+Get All Blog Posts
+GET /api/v1/getPosts
+Like a Blog Post
+POST /api/v1/likePost
+Unlike a Blog Post
+POST /api/v1/unlikePost
+Add Comment
+POST /api/v1/commentPost
+Learning Goals
+
+This project was built for learning:
+
+Express.js
+REST APIs
+MongoDB & Mongoose
+CRUD Operations
+Backend Architecture
+Git & GitHub Workflow
+MVC Pattern Basics
+Future Improvements
+JWT Authentication
+Authorization
+Blog Update/Delete APIs
+User Accounts
+Image Uploads
+Pagination
+Better Error Handling
+Input Validation Middleware
